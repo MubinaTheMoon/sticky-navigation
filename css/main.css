@@ -1,3 +1,27 @@
+/* inconsolata-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inconsolata-v32-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inconsolata-v32-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inconsolata-v32-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 *,
 *::after,
 *::before {
@@ -31,6 +55,8 @@ html {
 
 body {
   height: 100%;
+  font-family: "Inconsolata";
+  font-weight: 400;
 }
 
 .container {
@@ -49,6 +75,8 @@ body {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   transition: 0.5s;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-container {
@@ -58,12 +86,15 @@ body {
 }
 
 .logo {
-  width: 80px;
+  width: 60px;
 }
 
 .header-list {
   display: flex;
   gap: 40px;
+}
+.header-list .list-item {
+  font-weight: 500;
 }
 .header-list .list-item .link {
   color: #fff;
@@ -102,6 +133,7 @@ body {
   text-shadow: 0 0 10px dodgerblue;
 }
 .hero .hero-info h1 {
+  font-weight: 700;
   font-size: 40px;
 }
 .hero .hero-info p {

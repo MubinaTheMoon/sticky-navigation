@@ -1,3 +1,5 @@
+@import './base/typography';
+
 *,
 *::after,
 *::before{
@@ -25,6 +27,8 @@ html{
 }
 body{
     height: 100%;
+    font-family: "Inconsolata";
+    font-weight: 400;
 }
 .container{
     width: 100%;
@@ -42,6 +46,8 @@ body{
     // background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter:blur(20px);
     transition: .5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .header-container{
     display: flex;
@@ -49,13 +55,14 @@ body{
     align-items: center;
 }
 .logo{
-    width: 80px;
+    width: 60px;
 }
 .header-list{
     display: flex;
     gap: 40px;
 
     .list-item{
+        font-weight: 500;
         .link{
             color: #fff;
             transition: .3s;
@@ -98,6 +105,7 @@ body{
             text-shadow: 0 0 10px dodgerblue;
         }
         h1{
+            font-weight: 700;
             font-size: 40px;
         }
         p{
